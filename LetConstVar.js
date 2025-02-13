@@ -84,15 +84,22 @@ Reassignment	Yes	Yes	No (unless object/array properties are modified)
 
  */
 
-
 function VARS(a, b) {
 
     var value = a + b
     var all = 100 + value
-
     console.log(all)
-
 
 }
 
 VARS(10, 20)
+
+
+function CONSTZ(x, y) {
+
+    let a = x * y
+    let b = 200 * a
+    console.log(b)
+
+}
+CONSTZ(20, 40)
