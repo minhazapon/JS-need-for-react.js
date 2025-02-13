@@ -95,11 +95,20 @@ function VARS(a, b) {
 VARS(10, 20)
 
 
-function CONSTZ(x, y) {
+function letZ(x, y) {
 
     let a = x * y
     let b = 200 * a
     console.log(b)
 
 }
-CONSTZ(20, 40)
+letZ(20, 40)
+
+
+function constZ(v, z) {
+
+    const vz = v + z
+    console.log(vz)
+
+}
+constZ(100, 200)
