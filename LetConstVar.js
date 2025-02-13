@@ -94,7 +94,6 @@ function VARS(a, b) {
 
 VARS(10, 20)
 
-
 function letZ(x, y) {
 
     let a = x * y
@@ -103,7 +102,6 @@ function letZ(x, y) {
 
 }
 letZ(20, 40)
-
 
 function constZ(v, z) {
 
