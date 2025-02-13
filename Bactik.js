@@ -68,10 +68,8 @@ Template Literals স্ট্রিং ম্যানিপুলেশনে�
 ✅ Multi-line string সহজে লেখা যায়
  */
 
-
-const a = ` minhazul abedin apon and 
-
-farzana moutushi ponny `
+const a = `minhazul abedin apon and 
+farzana moutushi ponny`
 
 console.log(a)
 
@@ -83,11 +81,9 @@ const all = ` all value is a ${n1} and ${n2} `
 
 console.log(all)
 
-
 const allValue = (number) => {
 
     const value = ` i m give him ${number} dollar `
-
     console.log(value)
 
 }
