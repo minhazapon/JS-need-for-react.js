@@ -88,9 +88,26 @@ reduce() → সব এলিমেন্ট নিয়ে একটি একক
 
 ////map////
 
-
 const mapFunc = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const ReturnS = mapFunc.map(num => num * 2)
 
 console.log(ReturnS)
+
+////filter///
+
+const arrFilter = [20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
+
+const fils = arrFilter.filter(nums => nums % 6 === 0)
+
+console.log(fils)
+
+////reduce////
+
+const ReduZ = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1500]
+
+const redu = ReduZ.reduce((acc, num) => acc + num, 0)
+
+console.log(redu)
+
+
