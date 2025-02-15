@@ -96,3 +96,19 @@ function GetData() {
 GetData()
     .then(response => console.log(response))
     .catch(error => console.log(error))
+
+
+//async/await
+
+async function DataLoad() {
+    try {
+        let response = await fetchData()
+        console.log(response)
+    } catch (error) {
+        console.log(error)
+    }
+}
+DataLoad()
+
+
+
