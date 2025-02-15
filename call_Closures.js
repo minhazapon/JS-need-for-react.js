@@ -96,3 +96,16 @@ calls('minhaz the react developer', otherBack)
 
 //closures
 
+function allValues(outerValue) {
+
+    return function smallValues(InnerValue) {
+
+        console.log(` two values is a ${outerValue} and ${InnerValue}  `)
+
+    }
+
+}
+
+
+const all = allValues('javaScript value')
+all("react.js value")
