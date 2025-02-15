@@ -106,6 +106,21 @@ function allValues(outerValue) {
 
 }
 
-
 const all = allValues('javaScript value')
 all("react.js value")
+
+
+function theValues(think) {
+
+    return function vals(analysis) {
+
+        console.log(` the all thik is a ${think} and ${analysis} `)
+
+    }
+
+}
+
+
+const isAll = theValues('think in a react')
+
+isAll("be a leet code solver")
