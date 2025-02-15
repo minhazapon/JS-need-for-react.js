@@ -120,7 +120,5 @@ function theValues(think) {
 
 }
 
-
 const isAll = theValues('think in a react')
-
 isAll("be a leet code solver")
