@@ -52,3 +52,47 @@ Callbacks এবং Event Listeners-এ ব্যবহৃত হয়।
 
  */
 
+///call back
+
+function allBack(name, callback) {
+
+    console.log(` hello, ${name} `)
+    callback()
+
+}
+
+function stay() {
+    console.log("good bye")
+}
+
+allBack("minhazul abedin apon", stay)
+
+
+function V(number, NameCall) {
+
+    console.log(` that number is ${number} `)
+    NameCall()
+
+}
+
+function allNums() {
+    console.log(`1234567890987654321`)
+}
+
+V(1950374409, allNums)
+
+
+function calls(name, VBack) {
+    console.log(`the name is >>> ${name}`)
+    VBack()
+}
+
+function otherBack() {
+    console.log('all okay baby')
+}
+
+calls('minhaz the react developer', otherBack)
+
+
+//closures
+
