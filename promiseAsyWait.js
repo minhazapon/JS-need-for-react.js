@@ -59,3 +59,37 @@ Async/Await ব্যবহার করলে কোড বেশি ক্ল�
 🔹 যদি তোমার সহজ ও ক্লিন কোডের প্রয়োজন হয়, তবে Async/Await ব্যবহার করা ভালো।
 🔹 যদি একাধিক Promise একসাথে হ্যান্ডেল করতে চাও (যেমন Promise.all()), তবে Promise সরাসরি ব্যবহার করা সুবিধাজনক।
  */
+
+
+//promise
+
+
+function fetchData() {
+
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+
+            let success = true
+
+            if (success) {
+
+                resolve("data get successfully")
+
+            } else {
+
+                reject("data get is failed")
+
+            }
+
+
+        }, 200)
+
+    })
+
+}
+
+fetchData()
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+
