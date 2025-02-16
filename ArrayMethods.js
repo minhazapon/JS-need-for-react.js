@@ -86,3 +86,11 @@ const arrFilter = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const filterValue = arrFilter.filter(num => num % 2 === 0)
 
 console.log(filterValue)
+
+//reduce
+
+const arrReduce = [2, 34, 455, 3556, 2556, 66, 66]
+
+const redueValue = arrReduce.reduce((acc, num) => acc + num, 0)
+
+console.log(redueValue)
