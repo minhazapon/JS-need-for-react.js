@@ -94,3 +94,11 @@ const arrReduce = [2, 34, 455, 3556, 2556, 66, 66]
 const redueValue = arrReduce.reduce((acc, num) => acc + num, 0)
 
 console.log(redueValue)
+
+//find
+
+const arrFind = [4, 6, 8, 9, 10, 34, 56]
+
+const findValue = arrFind.find(num => num % 10 === 0)
+
+console.log(findValue)
