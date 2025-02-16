@@ -102,3 +102,19 @@ const arrFind = [4, 6, 8, 9, 10, 34, 56]
 const findValue = arrFind.find(num => num % 10 === 0)
 
 console.log(findValue)
+
+//some 
+
+const arrSome = [2, 4, 6, 7, 8]
+
+const SomeValue = arrSome.some(num => num > 6)
+
+console.log(SomeValue)
+
+//every()
+
+const arrEvery = [5, 6, 7, 8, 9]
+
+const everyValue = arrEvery.every(num => num > 3)
+
+console.log(everyValue)
