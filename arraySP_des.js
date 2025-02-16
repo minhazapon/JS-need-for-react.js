@@ -85,16 +85,13 @@ const D2 = [...array1, ...array2]
 
 console.log(D2)
 
-
 //array des
-
 
 const value = [1, 2, 3, 4, 5, 6, 7]
 
 const [a, b, c, d] = value
 
 console.log(a, b)
-
 
 const names = ["apon", "minhaz", "abedin", "react.js", "javaScript", "DSA"]
 
