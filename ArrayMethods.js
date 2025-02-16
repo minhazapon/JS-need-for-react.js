@@ -69,3 +69,12 @@ console.log(allGreaterThan5); // true
 ✅ some() → অন্তত একটা শর্ত মিলে গেলে true রিটার্ন করবে।
 ✅ every() → সবগুলা শর্ত মেনে চললে true রিটার্ন করবে।
  */
+
+
+//map
+
+const arrMap = [2, 3, 4, 5, 6, 7, 8, 9]
+
+const mapValue = arrMap.map(num => num * 3)
+
+console.log(mapValue)
