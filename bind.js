@@ -72,3 +72,27 @@ boundFunc(); // Output: Hello, Karim
 এটি মূল ফাংশন পরিবর্তন করে না, শুধুমাত্র একটি নতুন ফাংশন রিটার্ন করে।
 এটি setTimeout, event listener, call/apply-এর সাথে this ঠিক রাখতে ব্যবহৃত হয়।
  */
+
+const person = {
+    name: 'apon',
+    age: 23,
+    location: 'jhenaidah',
+    say: function () {
+        console.log(` hello ${this.name} `)
+    }
+}
+
+person.say()
+
+const person2 = {
+    name: 'apon',
+    age: 23,
+    location: 'jhenaidah',
+    say: function () {
+        setTimeout(function () {
+            console.log(` ASSALAMU ALAIKUM ${this.name} vai `)
+        }.bind(this), 1000)
+    }
+}
+
+person2.say()
