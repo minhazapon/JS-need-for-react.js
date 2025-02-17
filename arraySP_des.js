@@ -99,7 +99,3 @@ const [x, y, ...OtherNames] = names
 
 console.log(x, y, OtherNames)
 
-
-
-
-
