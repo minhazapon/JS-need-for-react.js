@@ -105,3 +105,36 @@ Axios ব্যবহার করলে কেন ভালো?
 এখন আপনি Axios দিয়ে API কল করে সহজে ডাটা লোড, সেন্ড, আপডেট বা ডিলিট করতে পারবেন। 🚀
  */
 
+const { default: axios } = require("axios")
+
+axios.get('https://jsonplaceholder.typicode.com/posts')
+    .then(res => {
+
+        console.log(res.data)
+
+    })
+    .catch(error => {
+
+        console.log(error)
+
+    })
+
+//Async/Await দিয়ে API কল
+
+async function fetchData() {
+
+    try {
+
+        const allData = await axios.get('https://jsonplaceholder.typicode.com/posts')
+
+        console.log(allData)
+
+    } catch (error) {
+
+        console.log(error)
+
+    }
+
+}
+
+fetchData()
