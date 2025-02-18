@@ -100,26 +100,25 @@ fetch('https://jsonplaceholder.typicode.com/posts/1', {
 
  */
 
-
 fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error))
 
 
 async function fetchData() {
 
-    try {
+  try {
 
-        let data = await fetch('https://jsonplaceholder.typicode.com/posts')
-        let FData = await data.json()
-        console.log(FData)
+    let data = await fetch('https://jsonplaceholder.typicode.com/posts')
+    let FData = await data.json()
+    console.log(FData)
 
-    } catch (error) {
+  } catch (error) {
 
-        console.log(error)
+    console.log(error)
 
-    }
+  }
 
 }
 
