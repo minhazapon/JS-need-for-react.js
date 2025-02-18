@@ -68,3 +68,21 @@ function motherFUNC() {
 }
 
 motherFUNC()
+
+//closures
+
+function cloParent() {
+
+    let isValue = 0;
+    return function cloChild() {
+        isValue++
+        console.log(isValue)
+    }
+
+}
+
+const allCounter = cloParent();
+
+allCounter();
+allCounter();
+allCounter();
