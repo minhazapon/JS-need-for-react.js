@@ -55,3 +55,12 @@ var sayHello = function() {
 3️⃣ Function Declaration পুরোপুরি hoist হয়।
 4️⃣ Function Expression hoist হয়, কিন্তু undefined হিসেবে থাকে।
  */
+
+
+apon() // that is hoisting
+
+function apon() {
+
+    console.log('fullName: Minhazul abedin apon')
+
+}
