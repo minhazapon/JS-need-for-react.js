@@ -53,3 +53,18 @@ counter(); // Output: 3
 Inner function তার parent function-এর variables মনে রাখতে পারে।
 Parent function execution শেষ হলেও inner function সেই variables ব্যবহার করতে পারে।
  */
+
+
+///lexical scope
+
+function motherFUNC() {
+
+    let value = 20;
+    function lex() {
+        console.log(`the value is a ${value}`)
+    }
+    lex()
+
+}
+
+motherFUNC()
