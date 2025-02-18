@@ -48,3 +48,14 @@ sessionStorage.clear(); // সমস্ত session ডাটা মুছে ফ
 
 localStorage ব্রাউজার বন্ধ হলেও ডাটা ধরে রাখে।
 sessionStorage ব্রাউজার ট্যাব বন্ধ হলে ডাটা মুছে ফেলে। */
+
+
+//setItem 
+
+localStorage.setItem("username", "minhazul abedin apon")
+
+//getItem
+
+const user = localStorage.getItem("username")
+
+console.log(user)
