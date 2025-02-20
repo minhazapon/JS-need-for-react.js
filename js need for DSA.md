@@ -4,10 +4,15 @@ DSA (Data Structures and Algorithms) শিখতে JavaScript-এ নিম্
 
 ১. JavaScript এর মৌলিক ধারণা
 [Variables (var, let, const)]
+
 [Data Types (number, string, boolean, object, array, etc.)]
+
 [Operators (Arithmetic, Logical, Comparison, Bitwise, etc.)]
+
 [Loops (for, while, do-while)]
+
 [Functions (Regular & Arrow Functions, Higher Order Functions, Recursion)]
+
 [ES6 Concepts (Spread Operator, Destructuring, Rest Parameters, etc.)]
 
 ///////////////////////////////////////
