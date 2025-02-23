@@ -51,3 +51,10 @@ const { a, b, ...restZ } = allData
 
 console.log(allData)
 
+//Default Parameters 
+
+const para = (a = 10, b = 200) => {
+    console.log(a + b)
+}
+para()
+
