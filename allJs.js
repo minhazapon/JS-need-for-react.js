@@ -15,3 +15,12 @@ console.log(skill)
 
 const arw = (a, v) => a + v
 console.log(arw(100, 200))
+
+//Template Literals
+
+const n1 = "apon"
+const n2 = "javascript"
+
+console.log(` ${n1} is a ${n2} developer`)
+
+//Destructuring 
