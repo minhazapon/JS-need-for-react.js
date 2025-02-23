@@ -32,7 +32,16 @@ const info = {
     profession: 'software developer'
 
 }
-
 const { name, age, ...rest } = info
-
 console.log(name, age, rest)
+
+//Spread & Rest Operator
+
+const arr1 = [1, 2, 3, 4, 5, 6, 7]
+
+const arr2 = [22, 33, 44, 55, 66, 77, ...arr1]
+
+const allArr = [...arr2]
+
+console.log(allArr)
+
