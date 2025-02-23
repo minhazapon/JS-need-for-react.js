@@ -45,3 +45,9 @@ const allArr = [...arr2]
 
 console.log(allArr)
 
+const allData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 222, 33, 44, 66, 77, 88, 99]
+
+const { a, b, ...restZ } = allData
+
+console.log(allData)
+
