@@ -24,3 +24,15 @@ const n2 = "javascript"
 console.log(` ${n1} is a ${n2} developer`)
 
 //Destructuring 
+
+const info = {
+
+    name: 'apon',
+    age: 23,
+    profession: 'software developer'
+
+}
+
+const { name, age, ...rest } = info
+
+console.log(name, age, rest)
