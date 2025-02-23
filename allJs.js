@@ -58,3 +58,21 @@ const para = (a = 10, b = 200) => {
 }
 para()
 
+//Optional Chaining 
+
+const op = {
+
+    s1: 'html',
+    s2: 'css',
+    s3: 'javaScript',
+    s4: 'react.js',
+
+}
+
+console.log(
+    op.s1,
+    op.s2,
+    op.s3,
+    op.s4,
+    op?.s5?.a
+)
