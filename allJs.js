@@ -153,9 +153,34 @@ function parentClose(z) {
     }
 }
 
-const zy = parentClose('react')
+// const zy = parentClose('react')
 
-zy('DSA expert')
+// zy('DSA expert')
+
+
+//promise
+
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let success = true
+            if (success) {
+                resolve("data get successfully")
+            } else {
+                reject('data get fail')
+            }
+        }, 1000);
+    });
+}
+
+fetchData()
+    .then(response => {
+        console.log(response)
+    })
+    .catch(error => {
+        console.log(error)
+    })
+
 
 
 
