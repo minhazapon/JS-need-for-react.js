@@ -142,7 +142,20 @@ function all() {
 
 }
 
-names('apon the react expert', all)
+// names('apon the react expert', all)
+
+
+//closures
+
+function parentClose(z) {
+    return function childClose(y) {
+        console.log(` hello wre looking into ${z} and ${y} `)
+    }
+}
+
+const zy = parentClose('react')
+
+zy('DSA expert')
 
 
 
