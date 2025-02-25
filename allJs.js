@@ -253,4 +253,11 @@ function lex() {
 
 lex()
 
+//localStorage
+
+localStorage.setItem("name", "minhazul abedin apon")
+console.log(localStorage.getItem("name"))
+localStorage.removeItem("name")
+localStorage.clear()
+
 
