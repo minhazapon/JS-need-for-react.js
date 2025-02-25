@@ -217,7 +217,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 axios.get('https://jsonplaceholder.typicode.com/comments')
     .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
     })
     .catch(error => {
         console.log(error)
@@ -225,14 +225,13 @@ axios.get('https://jsonplaceholder.typicode.com/comments')
 
 //async/await হল Promises এর আরও সহজ ভার্সন।
 
-
 const prmsData = async () => {
 
     try {
 
         let data = await fetch('https://raw.githubusercontent.com/minhazapon/pokemon--react.js-project/refs/heads/main/public/pokemon.json')
         let allData = await data.json()
-        console.log(allData)
+        // console.log(allData)
 
     } catch (error) {
         console.log(error)
@@ -241,7 +240,17 @@ const prmsData = async () => {
 prmsData()
 
 
+//Lexical Scope
 
+function lex() {
 
+    let names = "minhaz"
+    function lx() {
+        console.log(names)
+    }
+    lx()
+}
+
+lex()
 
 
