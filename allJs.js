@@ -223,7 +223,22 @@ axios.get('https://jsonplaceholder.typicode.com/comments')
         console.log(error)
     })
 
+//async/await হল Promises এর আরও সহজ ভার্সন।
 
+
+const prmsData = async () => {
+
+    try {
+
+        let data = await fetch('https://raw.githubusercontent.com/minhazapon/pokemon--react.js-project/refs/heads/main/public/pokemon.json')
+        let allData = await data.json()
+        console.log(allData)
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+prmsData()
 
 
 
