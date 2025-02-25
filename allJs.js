@@ -2,6 +2,8 @@
 
 //let , const , var
 
+const { default: axios } = require("axios")
+
 let name1 = "minhazul abedin apon"
 // console.log(name1);
 
@@ -205,11 +207,23 @@ const fetchAsync = async () => {
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
     })
     .catch(error => {
         console.log(error)
     })
+
+//axios
+
+axios.get('https://jsonplaceholder.typicode.com/comments')
+    .then(res => {
+        console.log(res.data)
+    })
+    .catch(error => {
+        console.log(error)
+    })
+
+
 
 
 
