@@ -104,7 +104,7 @@ const products = [
 
 const allProducts = products.filter(products => products.price > 200)
 
-console.log(allProducts)
+// console.log(allProducts)
 
 //reduce
 
@@ -122,7 +122,9 @@ const values = [
 
 ]
 
-const allValues = values.reduce((acc, pro) => acc + pro.price)
+const allValues = values.reduce((acc, pro) => acc + pro.price, 0)
 
 console.log(allValues)
+
+
 
