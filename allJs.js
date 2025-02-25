@@ -3,18 +3,18 @@
 //let , const , var
 
 let name1 = "minhazul abedin apon"
-console.log(name1);
+// console.log(name1);
 
 const name2 = "apon the javaScript developer"
-console.log(name2)
+// console.log(name2)
 
 var skill = "react.js"
-console.log(skill)
+// console.log(skill)
 
 //Arrow Functions
 
 const arw = (a, v) => a + v
-console.log(arw(100, 200))
+// console.log(arw(100, 200))
 
 //Template Literals
 
@@ -33,7 +33,7 @@ const info = {
 
 }
 const { name, age, ...rest } = info
-console.log(name, age, rest)
+// console.log(name, age, rest)
 
 //Spread & Rest Operator
 
@@ -43,7 +43,7 @@ const arr2 = [22, 33, 44, 55, 66, 77, ...arr1]
 
 const allArr = [...arr2]
 
-console.log(allArr)
+// console.log(allArr)
 
 const allData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 222, 33, 44, 66, 77, 88, 99]
 
@@ -56,7 +56,7 @@ console.log(allData)
 const para = (a = 10, b = 200) => {
     console.log(a + b)
 }
-para()
+// para()
 
 //Optional Chaining 
 
@@ -86,4 +86,22 @@ const number = [1, 2, 3, 4, 5, 6, 7]
 const numberMap = number.map(num => num * 4)
 
 // console.log(numberMap)
+
+const products = [
+
+    {
+        name: 'mango', price: 200
+    },
+    {
+        name: 'jam', price: 300
+    },
+    {
+        name: 'kathal', price: 400
+    },
+
+]
+
+const allProducts = products.filter(products => products.price > 200)
+
+console.log(allProducts)
 
