@@ -127,4 +127,24 @@ const allValues = values.reduce((acc, pro) => acc + pro.price, 0)
 console.log(allValues)
 
 
+//CALL BACKS 
+
+function names(x, callback) {
+
+    console.log(` we are looking into ${x} `)
+
+    callback()
+}
+
+function all() {
+
+    console.log('hello minhaz , why u call us')
+
+}
+
+names('apon the react expert', all)
+
+
+
+
 
