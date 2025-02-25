@@ -181,6 +181,25 @@ fetchData()
         console.log(error)
     })
 
+//Async/Await
+
+const fetchAsync = async () => {
+
+    try {
+
+        const dataIs = await fetch('https://jsonplaceholder.typicode.com/users')
+        // console.log(dataIs)
+
+    } catch (error) {
+
+        console.log(error)
+
+    }
+
+}
+
+// fetchAsync();
+
 
 
 
