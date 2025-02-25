@@ -87,6 +87,7 @@ const numberMap = number.map(num => num * 4)
 
 // console.log(numberMap)
 
+//filter
 const products = [
 
     {
@@ -104,4 +105,24 @@ const products = [
 const allProducts = products.filter(products => products.price > 200)
 
 console.log(allProducts)
+
+//reduce
+
+const values = [
+
+    {
+        name: 'iPhone', price: 3000
+    },
+    {
+        name: 'sumsung', price: 4000
+    },
+    {
+        name: 'redmi', price: 6000
+    },
+
+]
+
+const allValues = values.reduce((acc, pro) => acc + pro.price)
+
+console.log(allValues)
 
