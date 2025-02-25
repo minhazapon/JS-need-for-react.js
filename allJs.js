@@ -68,7 +68,6 @@ const op = {
     s4: 'react.js',
 
 }
-
 console.log(
     op.s1,
     op.s2,
@@ -76,3 +75,15 @@ console.log(
     op.s4,
     op?.s5?.a
 )
+
+
+//HOFs
+
+//map
+
+const number = [1, 2, 3, 4, 5, 6, 7]
+
+const numberMap = number.map(num => num * 4)
+
+// console.log(numberMap)
+
